@@ -16,7 +16,7 @@ export const AuthSlice = createSlice({
     },
     signup: (state, action) => {},
     refreshToken: (state, action) => {
-      state.is_user_authenticated = false;
+      state.is_user_authenticated = true;
       state.access_token = Math.random().toString(36).substr(2);
       state.token_expiry_time = Date.now() / 1000 + 24 * 3600;
     }

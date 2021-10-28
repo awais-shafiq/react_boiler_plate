@@ -3,17 +3,15 @@
   text-align: center;
 }
 
-.loader-circle {
+.processing-indicator {
   margin: auto;
   height: 15px;
   width: 15px;
   border-radius: 100%;
   border: 3px solid;
-  border-top-color: #42a5ff;
-  border-left-color: #42a5ff;
-  border-bottom-color: #42a5ff;
+  border-color: #aaaaaa;
   border-right-color: #d1d1d1;
-  animation: loading 0.75s linear infinite;
+  animation: loading 0.7s linear infinite;
 }
 
 @keyframes loading {

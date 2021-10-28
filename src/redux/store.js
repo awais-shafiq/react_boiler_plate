@@ -1,18 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import authReducer from "./reducers/AuthReducer";
+import { AppStatus } from "../utils/Helper";
+import appReducer from "./reducers/AppReducer";
 
-const preloadedState = {
-  auth: {
-    is_user_authenticated: false,
-    access_token: null,
-    token_expiry_time: null
-  }
-};
 
 export default configureStore({
-  reducer: {
-    auth: authReducer
-  },
-  preloadedState,
-  devTools: true
+	reducer: {
+		application: appReducer
+	},
+	devTools: true
 });
